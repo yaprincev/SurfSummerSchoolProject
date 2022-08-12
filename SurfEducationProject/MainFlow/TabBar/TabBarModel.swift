@@ -27,11 +27,11 @@ enum TabBarModel {
     var image: UIImage? {
         switch self {
         case .main:
-            return UIImage(named: "Main")
+            return UIImage(named: "main")
         case .favorite:
-            return UIImage(named: "Favorite")
+            return UIImage(named: "favorite")
         case .profile:
-            return UIImage(named: "Profile")
+            return UIImage(named: "profile")
         }
     }
     

@@ -18,6 +18,9 @@
 		82B445FD289C3832000D997F /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B445FB289C3832000D997F /* FavoriteViewController.xib */; };
 		82B44605289C3AB1000D997F /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B44604289C3AB1000D997F /* TabBarModel.swift */; };
 		82B44607289D2E6E000D997F /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B44606289D2E6D000D997F /* TabBarConfigurator.swift */; };
+		82B44609289DAA07000D997F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B44608289DAA07000D997F /* MainModel.swift */; };
+		82B4460D28A2AA91000D997F /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B4460B28A2AA91000D997F /* MainCollectionViewCell.swift */; };
+		82B4460E28A2AA91000D997F /* MainCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B4460C28A2AA91000D997F /* MainCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		82B445FB289C3832000D997F /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		82B44604289C3AB1000D997F /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		82B44606289D2E6D000D997F /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
+		82B44608289DAA07000D997F /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
+		82B4460B28A2AA91000D997F /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		82B4460C28A2AA91000D997F /* MainCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +93,10 @@
 		82B445FF289C387D000D997F /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
+				82B4460A28A2AA54000D997F /* Cells */,
 				82B445F2289C1469000D997F /* MainViewController.swift */,
 				82B445F3289C1469000D997F /* MainViewController.xib */,
+				82B44608289DAA07000D997F /* MainModel.swift */,
 			);
 			path = MainModule;
 			sourceTree = "<group>";
@@ -128,6 +136,15 @@
 				82B44606289D2E6D000D997F /* TabBarConfigurator.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		82B4460A28A2AA54000D997F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				82B4460B28A2AA91000D997F /* MainCollectionViewCell.swift */,
+				82B4460C28A2AA91000D997F /* MainCollectionViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B445EB289AD111000D997F /* LaunchScreen.storyboard in Resources */,
+				82B4460E28A2AA91000D997F /* MainCollectionViewCell.xib in Resources */,
 				82B445E8289AD111000D997F /* Assets.xcassets in Resources */,
 				82B445FD289C3832000D997F /* FavoriteViewController.xib in Resources */,
 				82B445F9289C381B000D997F /* ProfileViewController.xib in Resources */,
@@ -206,6 +224,8 @@
 				82B445F4289C1469000D997F /* MainViewController.swift in Sources */,
 				82B445F8289C381B000D997F /* ProfileViewController.swift in Sources */,
 				82B445DF289AD103000D997F /* AppDelegate.swift in Sources */,
+				82B4460D28A2AA91000D997F /* MainCollectionViewCell.swift in Sources */,
+				82B44609289DAA07000D997F /* MainModel.swift in Sources */,
 				82B445FC289C3832000D997F /* FavoriteViewController.swift in Sources */,
 				82B44607289D2E6E000D997F /* TabBarConfigurator.swift in Sources */,
 				82B44605289C3AB1000D997F /* TabBarModel.swift in Sources */,
