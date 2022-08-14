@@ -32,6 +32,7 @@ class MainViewController: UIViewController {
         configureApperance()
         configureModel()
         model.getPosts()
+        configureNavigationBar()
     }
 }
 
@@ -39,7 +40,6 @@ class MainViewController: UIViewController {
 
 private extension MainViewController {
     func configureApperance() {
-        navigationItem.title = "Главная"
         collectionView.register(UINib(nibName: "\(MainCollectionViewCell.self)", bundle: .main), forCellWithReuseIdentifier: "\(MainCollectionViewCell.self)")
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -50,6 +50,15 @@ private extension MainViewController {
         model.didItemUpdated = { [weak self] in
             self?.collectionView.reloadData()
         }
+    }
+    func configureNavigationBar() {
+        navigationItem.title = "Главная"
+        
+        navigationItem.rightBarButtonItem  = UIBarButtonItem(image: UIImage(named: "search-button"), style: .plain, target: self, action: #selector(moveToSearch))
+    }
+    
+    @objc func moveToSearch() {
+        navigationController?.pushViewController(SearchViewController(), animated: true)
     }
 }
 
