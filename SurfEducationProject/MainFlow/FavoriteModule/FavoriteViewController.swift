@@ -13,6 +13,10 @@ class FavoriteViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         configureNavigationBar()
     }
 }
@@ -24,6 +28,7 @@ class FavoriteViewController: UIViewController {
             navigationItem.title = "Избранное"
             
             navigationItem.rightBarButtonItem  = UIBarButtonItem(image: UIImage(named: "search-button"), style: .plain, target: self, action: #selector(moveToSearch))
+            navigationItem.rightBarButtonItem?.tintColor = .black
         }
         
         @objc func moveToSearch() {

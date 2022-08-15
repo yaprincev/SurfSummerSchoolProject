@@ -32,6 +32,10 @@ class MainViewController: UIViewController {
         configureApperance()
         configureModel()
         model.getPosts()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         configureNavigationBar()
     }
 }
@@ -55,6 +59,7 @@ private extension MainViewController {
         navigationItem.title = "Главная"
         
         navigationItem.rightBarButtonItem  = UIBarButtonItem(image: UIImage(named: "search-button"), style: .plain, target: self, action: #selector(moveToSearch))
+        navigationItem.rightBarButtonItem?.tintColor = .black
     }
     
     @objc func moveToSearch() {
@@ -95,5 +100,11 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return Constants.spaceBetweenElements
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailViewController()
+        vc.model = model.items[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
