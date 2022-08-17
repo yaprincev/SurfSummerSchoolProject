@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		829A3F9728AC3F28006147BC /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A3F9528AC3F28006147BC /* FavoriteViewController.swift */; };
+		829A3F9828AC3F28006147BC /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829A3F9628AC3F28006147BC /* FavoriteViewController.xib */; };
+		829A3F9B28AC4035006147BC /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829A3F9928AC4035006147BC /* CollectionViewCell.swift */; };
+		829A3F9C28AC4035006147BC /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 829A3F9A28AC4035006147BC /* CollectionViewCell.xib */; };
 		82B445DF289AD103000D997F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B445DE289AD103000D997F /* AppDelegate.swift */; };
 		82B445E8289AD111000D997F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B445E7289AD111000D997F /* Assets.xcassets */; };
 		82B445EB289AD111000D997F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B445E9289AD111000D997F /* LaunchScreen.storyboard */; };
@@ -14,8 +18,6 @@
 		82B445F5289C1469000D997F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B445F3289C1469000D997F /* MainViewController.xib */; };
 		82B445F8289C381B000D997F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B445F6289C381B000D997F /* ProfileViewController.swift */; };
 		82B445F9289C381B000D997F /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B445F7289C381B000D997F /* ProfileViewController.xib */; };
-		82B445FC289C3832000D997F /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B445FA289C3832000D997F /* FavoriteViewController.swift */; };
-		82B445FD289C3832000D997F /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B445FB289C3832000D997F /* FavoriteViewController.xib */; };
 		82B44605289C3AB1000D997F /* TabBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B44604289C3AB1000D997F /* TabBarModel.swift */; };
 		82B44607289D2E6E000D997F /* TabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B44606289D2E6D000D997F /* TabBarConfigurator.swift */; };
 		82B44609289DAA07000D997F /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B44608289DAA07000D997F /* MainModel.swift */; };
@@ -35,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		829A3F9528AC3F28006147BC /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		829A3F9628AC3F28006147BC /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		829A3F9928AC4035006147BC /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		829A3F9A28AC4035006147BC /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		82B445DB289AD103000D997F /* SurfEducationProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurfEducationProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82B445DE289AD103000D997F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82B445E7289AD111000D997F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,8 +50,6 @@
 		82B445F3289C1469000D997F /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		82B445F6289C381B000D997F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		82B445F7289C381B000D997F /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		82B445FA289C3832000D997F /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
-		82B445FB289C3832000D997F /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
 		82B44604289C3AB1000D997F /* TabBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarModel.swift; sourceTree = "<group>"; };
 		82B44606289D2E6D000D997F /* TabBarConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarConfigurator.swift; sourceTree = "<group>"; };
 		82B44608289DAA07000D997F /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -75,6 +79,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		829A3F8128ABC31F006147BC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				829A3F9928AC4035006147BC /* CollectionViewCell.swift */,
+				829A3F9A28AC4035006147BC /* CollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		82B445D2289AD102000D997F = {
 			isa = PBXGroup;
 			children = (
@@ -138,8 +151,9 @@
 		82B44601289C38A1000D997F /* FavoriteModule */ = {
 			isa = PBXGroup;
 			children = (
-				82B445FA289C3832000D997F /* FavoriteViewController.swift */,
-				82B445FB289C3832000D997F /* FavoriteViewController.xib */,
+				829A3F8128ABC31F006147BC /* Cells */,
+				829A3F9528AC3F28006147BC /* FavoriteViewController.swift */,
+				829A3F9628AC3F28006147BC /* FavoriteViewController.xib */,
 			);
 			path = FavoriteModule;
 			sourceTree = "<group>";
@@ -288,12 +302,13 @@
 			files = (
 				82B445EB289AD111000D997F /* LaunchScreen.storyboard in Resources */,
 				82B4462028AAE3BC000D997F /* DetailImageTableViewCell.xib in Resources */,
+				829A3F9C28AC4035006147BC /* CollectionViewCell.xib in Resources */,
+				829A3F9828AC3F28006147BC /* FavoriteViewController.xib in Resources */,
 				82B4460E28A2AA91000D997F /* MainCollectionViewCell.xib in Resources */,
 				82B4462528AAED68000D997F /* DetailTitleTableViewCell.xib in Resources */,
 				82B445E8289AD111000D997F /* Assets.xcassets in Resources */,
 				82B4461A28AAD4F6000D997F /* DetailViewController.xib in Resources */,
 				82B4462F28AAF577000D997F /* DetailTextTableViewCell.xib in Resources */,
-				82B445FD289C3832000D997F /* FavoriteViewController.xib in Resources */,
 				82B445F9289C381B000D997F /* ProfileViewController.xib in Resources */,
 				82B445F5289C1469000D997F /* MainViewController.xib in Resources */,
 				82B4461528A7E06B000D997F /* SearchViewController.xib in Resources */,
@@ -311,13 +326,14 @@
 				82B4462428AAED68000D997F /* DetailTitleTableViewCell.swift in Sources */,
 				82B4461428A7E06B000D997F /* SearchViewController.swift in Sources */,
 				82B445F4289C1469000D997F /* MainViewController.swift in Sources */,
+				829A3F9728AC3F28006147BC /* FavoriteViewController.swift in Sources */,
+				829A3F9B28AC4035006147BC /* CollectionViewCell.swift in Sources */,
 				82B445F8289C381B000D997F /* ProfileViewController.swift in Sources */,
 				82B4463128AAF975000D997F /* DetailItemModel.swift in Sources */,
 				82B4462E28AAF577000D997F /* DetailTextTableViewCell.swift in Sources */,
 				82B445DF289AD103000D997F /* AppDelegate.swift in Sources */,
 				82B4460D28A2AA91000D997F /* MainCollectionViewCell.swift in Sources */,
 				82B44609289DAA07000D997F /* MainModel.swift in Sources */,
-				82B445FC289C3832000D997F /* FavoriteViewController.swift in Sources */,
 				82B4461928AAD4F6000D997F /* DetailViewController.swift in Sources */,
 				82B44607289D2E6E000D997F /* TabBarConfigurator.swift in Sources */,
 				82B44605289C3AB1000D997F /* TabBarModel.swift in Sources */,

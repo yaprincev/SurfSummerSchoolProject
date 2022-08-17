@@ -26,7 +26,7 @@ class MainCollectionViewCell: UICollectionViewCell {
     
     var didFavoritesTapped: (() -> Void)?
     
-    //MARK: - Calculated
+    // MARK: - Calculated
     
     var buttonImage: UIImage? {
         return isFavorite ? Constants.fillHeart : Constants.heartImage

@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet private weak var collectionView: UICollectionView!
     
-    // MARK: - Lifecyrcle
+    // MARK: - UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
