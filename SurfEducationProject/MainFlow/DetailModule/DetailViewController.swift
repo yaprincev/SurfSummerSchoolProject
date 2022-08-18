@@ -36,7 +36,6 @@ private extension DetailViewController {
     
     func configurateApperance() {
         configureTableView()
-        tableview.contentInset = .init(top: 10, left: 16, bottom: 10, right: 16)
         DispatchQueue.main.async {
             self.tableview.reloadData()
         }
@@ -102,7 +101,6 @@ extension DetailViewController: UITableViewDataSource {
         default:
             return UITableViewCell()
         }
-        
     }
     
     

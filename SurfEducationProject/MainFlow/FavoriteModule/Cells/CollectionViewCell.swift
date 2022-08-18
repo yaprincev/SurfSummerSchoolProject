@@ -39,9 +39,12 @@ class CollectionViewCell: UICollectionViewCell {
             favoriteLabel.text = title
         }
     }
-    var image: UIImage? {
+    var imageUrlInString: String = "" {
         didSet {
-            favoriteImage.image = image
+            guard let url = URL(string: imageUrlInString) else {
+                return
+            }
+            favoriteImage.loadImage(from: url)
         }
     }
     
@@ -76,6 +79,7 @@ private extension CollectionViewCell {
         favoriteText.font = .systemFont(ofSize: 12)
         
         favoriteImage.layer.cornerRadius = 12
+        favoriteImage.contentMode = .scaleAspectFill
         
         heartButton.setImage(UIImage(named: "heart-fill"), for: .normal)
         

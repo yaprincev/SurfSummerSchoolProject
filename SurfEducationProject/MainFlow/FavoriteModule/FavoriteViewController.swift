@@ -45,12 +45,15 @@ private extension FavoriteViewController {
         favoriteCollection.register(UINib(nibName: "\(CollectionViewCell.self)", bundle: .main), forCellWithReuseIdentifier: "\(CollectionViewCell.self)")
         favoriteCollection.dataSource = self
         favoriteCollection.delegate = self
-        favoriteCollection.contentInset = .init(top: 16, left: 16, bottom: 24, right: 16)
+        //favoriteCollection.contentInset = .init(top: 16, left: 16, bottom: 24, right: 16)
     }
     
     func configureModel() { // todel
         model.didItemUpdated = { [weak self] in
-            self?.favoriteCollection.reloadData()
+            DispatchQueue.main.async {
+                self?.favoriteCollection.reloadData()
+            }
+            
         }
     }
     
@@ -79,7 +82,7 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
         if let cell = cell as? CollectionViewCell {
             let item = model.items[indexPath.row]
             cell.title = item.title
-            //cell.image = item.imageUrlInString
+            cell.imageUrlInString = item.imageUrlInString
             cell.text = item.content
             cell.date = item.dateCreation
         }

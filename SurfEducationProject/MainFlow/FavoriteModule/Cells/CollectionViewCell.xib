@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ony-45-Mf3">
-                        <rect key="frame" x="0.0" y="0.0" width="421" height="571"/>
+                        <rect key="frame" x="16" y="16" width="389" height="555"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Ony-45-Mf3" secondAttribute="height" multiplier="343:326" priority="250" id="c67-2H-MEC"/>
                         </constraints>
                     </imageView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phU-fk-BGM">
-                        <rect key="frame" x="389" y="8" width="24" height="24"/>
+                        <rect key="frame" x="373" y="24" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="CE6-O9-pjY"/>
                             <constraint firstAttribute="height" constant="24" id="Yhb-TD-3HX"/>
@@ -59,16 +59,16 @@
                 <constraint firstItem="phU-fk-BGM" firstAttribute="trailing" secondItem="Ony-45-Mf3" secondAttribute="trailing" constant="-8" id="3fl-HZ-CLD"/>
                 <constraint firstItem="Drp-oJ-AR2" firstAttribute="top" secondItem="Ony-45-Mf3" secondAttribute="bottom" constant="16" id="3gi-yD-wUh"/>
                 <constraint firstItem="7Vd-uP-hO6" firstAttribute="top" secondItem="Ony-45-Mf3" secondAttribute="bottom" constant="21" id="4EY-q8-nCg"/>
-                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Ony-45-Mf3" secondAttribute="trailing" id="Bam-3p-bLu"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="Ony-45-Mf3" secondAttribute="trailing" constant="16" id="Bam-3p-bLu"/>
                 <constraint firstItem="phU-fk-BGM" firstAttribute="top" secondItem="Ony-45-Mf3" secondAttribute="top" constant="8" id="Bm9-tC-sSz"/>
                 <constraint firstItem="1YD-Or-dvM" firstAttribute="top" secondItem="Drp-oJ-AR2" secondAttribute="bottom" constant="8" id="CS8-0s-rHk"/>
                 <constraint firstItem="1YD-Or-dvM" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="16" id="Kyv-sV-4yC"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="bottom" secondItem="1YD-Or-dvM" secondAttribute="bottom" constant="8" id="N1P-LH-cM0"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="7Vd-uP-hO6" secondAttribute="trailing" constant="27" id="U3w-dY-9GZ"/>
                 <constraint firstItem="7Vd-uP-hO6" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Drp-oJ-AR2" secondAttribute="trailing" constant="8" id="aRn-gy-Vcx"/>
-                <constraint firstItem="Ony-45-Mf3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c6S-yh-bc7"/>
+                <constraint firstItem="Ony-45-Mf3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="16" id="c6S-yh-bc7"/>
                 <constraint firstItem="Drp-oJ-AR2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="dXn-qK-pzI"/>
-                <constraint firstItem="Ony-45-Mf3" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="wd6-9C-EiH"/>
+                <constraint firstItem="Ony-45-Mf3" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="16" id="wd6-9C-EiH"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="1YD-Or-dvM" secondAttribute="trailing" constant="31" id="yRT-IE-Skr"/>
             </constraints>
             <size key="customSize" width="421" height="671"/>
