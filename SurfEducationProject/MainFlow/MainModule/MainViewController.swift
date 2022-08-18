@@ -31,7 +31,21 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         configureApperance()
         configureModel()
-        model.getPosts()
+        model.loadPosts()
+        
+       // let credentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
+//        AuthService().performLoginRequest(credentials: credentials) { result in
+//            switch result {
+//            case .success(let response):
+//                break
+//                //print(response)
+//            case .failure(let error):
+//                //print(error)
+//            }
+//        }
+//        PicturesService().loadPictures { result in
+//            print(result)
+//        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -52,7 +66,9 @@ private extension MainViewController {
     
     func configureModel() {
         model.didItemUpdated = { [weak self] in
-            self?.collectionView.reloadData()
+            DispatchQueue.main.async {
+                self?.collectionView.reloadData()
+            }
         }
     }
     func configureNavigationBar() {
@@ -81,9 +97,11 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             let item = model.items[indexPath.row]
             cell.title = item.title
             cell.isFavorite = item.isFavorite
-            cell.image = item.image
+            cell.imageUrlInString = item.imageUrlInString
+            
             cell.didFavoritesTapped = { [weak self] in
                 self?.model.items[indexPath.row].isFavorite.toggle()
+                
             }
         }
         return cell

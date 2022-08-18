@@ -10,26 +10,26 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCollectionViewCell" customModule="SurfEducationProject" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="214" height="343"/>
+            <rect key="frame" x="0.0" y="0.0" width="293" height="323"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="214" height="343"/>
+                <rect key="frame" x="0.0" y="0.0" width="293" height="323"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="BqL-OM-3fs">
-                        <rect key="frame" x="0.0" y="0.0" width="214" height="306.5"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="BqL-OM-3fs">
+                        <rect key="frame" x="0.0" y="0.0" width="293" height="278.5"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="BqL-OM-3fs" secondAttribute="height" multiplier="168:222" priority="250" id="wdg-bF-CNV"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJX-uf-1cx">
-                        <rect key="frame" x="0.0" y="314.5" width="214" height="20.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJX-uf-1cx">
+                        <rect key="frame" x="0.0" y="286.5" width="293" height="20.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4h-z2-xPu">
-                        <rect key="frame" x="182" y="8" width="24" height="24"/>
+                        <rect key="frame" x="261" y="8" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="9f5-od-7X9"/>
                             <constraint firstAttribute="height" constant="24" id="nqw-9z-h6L"/>
@@ -48,20 +48,19 @@
                 <constraint firstAttribute="trailing" secondItem="W4h-z2-xPu" secondAttribute="trailing" constant="8" id="5vS-PP-Pa5"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="BqL-OM-3fs" secondAttribute="trailing" id="6Me-XR-KE3"/>
                 <constraint firstAttribute="trailing" secondItem="kJX-uf-1cx" secondAttribute="trailing" id="AN1-Bl-2nP"/>
-                <constraint firstAttribute="bottom" secondItem="kJX-uf-1cx" secondAttribute="bottom" constant="8" id="GaU-50-2cl"/>
+                <constraint firstAttribute="bottom" secondItem="kJX-uf-1cx" secondAttribute="bottom" constant="16" id="GaU-50-2cl"/>
                 <constraint firstItem="kJX-uf-1cx" firstAttribute="top" secondItem="BqL-OM-3fs" secondAttribute="bottom" constant="8" id="KLo-XU-Med"/>
                 <constraint firstItem="BqL-OM-3fs" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="LLJ-3R-cqN"/>
                 <constraint firstItem="BqL-OM-3fs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="c9u-LO-VKM"/>
-                <constraint firstItem="kJX-uf-1cx" firstAttribute="top" secondItem="BqL-OM-3fs" secondAttribute="bottom" constant="8" id="geQ-Eg-qzV"/>
                 <constraint firstItem="W4h-z2-xPu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="qQG-Su-cVQ"/>
             </constraints>
-            <size key="customSize" width="214" height="343"/>
+            <size key="customSize" width="293" height="323"/>
             <connections>
                 <outlet property="favoriteButton" destination="W4h-z2-xPu" id="iRn-Iv-chg"/>
                 <outlet property="imageView" destination="BqL-OM-3fs" id="8jz-Yz-siA"/>
                 <outlet property="titleLabel" destination="kJX-uf-1cx" id="kuK-4C-5Nm"/>
             </connections>
-            <point key="canvasLocation" x="226.08695652173915" y="76.674107142857139"/>
+            <point key="canvasLocation" x="341.304347826087" y="67.299107142857139"/>
         </collectionViewCell>
     </objects>
 </document>

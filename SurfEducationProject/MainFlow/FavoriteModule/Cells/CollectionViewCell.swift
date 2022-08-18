@@ -11,11 +11,11 @@ class CollectionViewCell: UICollectionViewCell {
 
     // MARK: - Views
     
-    @IBOutlet weak var favoriteImage: UIImageView!
-    @IBOutlet weak var favoriteDate: UILabel!
-    @IBOutlet weak var heartButton: UIButton!
-    @IBOutlet weak var favoriteText: UILabel!
-    @IBOutlet weak var favoriteLabel: UILabel!
+    @IBOutlet private weak var favoriteImage: UIImageView!
+    @IBOutlet private weak var favoriteDate: UILabel!
+    @IBOutlet private weak var heartButton: UIButton!
+    @IBOutlet private weak var favoriteText: UILabel!
+    @IBOutlet private weak var favoriteLabel: UILabel!
     // MARK: - Calculated
     override var isHighlighted: Bool {
         didSet {

@@ -16,7 +16,7 @@ class FavoriteViewController: UIViewController {
     
     // MARK: - Views
     
-    @IBOutlet weak var favoriteCollection: UICollectionView!
+    @IBOutlet private weak var favoriteCollection: UICollectionView!
     
     // MARK: - Private Properties //todel
     
@@ -29,7 +29,7 @@ class FavoriteViewController: UIViewController {
         configureApperance()
         configureModel()
         
-        model.getPosts()
+        model.loadPosts()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -79,9 +79,9 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
         if let cell = cell as? CollectionViewCell {
             let item = model.items[indexPath.row]
             cell.title = item.title
-            cell.image = item.image
+            //cell.image = item.imageUrlInString
             cell.text = item.content
-            cell.date = item.dataCreation
+            cell.date = item.dateCreation
         }
         return cell
    }
