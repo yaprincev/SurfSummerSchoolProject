@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
 
     // MARK: - Constants
@@ -66,7 +67,7 @@ private extension MainViewController {
     
     func configureModel() {
         model.didItemUpdated = { [weak self] in
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            DispatchQueue.main.async {
                 self?.collectionView.reloadData()
             }
         }
@@ -98,7 +99,7 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             
             cell.isFavorite = item.isFavorite
             cell.imageUrlInString = item.imageUrlInString
-            cell.title = item.title
+            cell.title = item.id
         //    cell.didFavoritesTapped = { [weak self] in
                 //self?.model.items[indexPath.row].isFavorite.toggle()
                 
