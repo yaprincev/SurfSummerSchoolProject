@@ -33,16 +33,16 @@ class MainViewController: UIViewController {
         configureModel()
         model.loadPosts()
         
-       // let credentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
-//        AuthService().performLoginRequest(credentials: credentials) { result in
-//            switch result {
-//            case .success(let response):
-//                break
-//                //print(response)
-//            case .failure(let error):
-//                //print(error)
-//            }
-//        }
+        let credentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
+        AuthService().performLoginRequestAndSaveToken(credentials: credentials) { result in
+            switch result {
+            case .success(let response):
+
+                print(response)
+            case .failure(let error):
+                print(error)
+            }
+        }
 //        PicturesService().loadPictures { result in
 //            print(result)
 //        }
@@ -66,7 +66,7 @@ private extension MainViewController {
     
     func configureModel() {
         model.didItemUpdated = { [weak self] in
-            DispatchQueue.main.async {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                 self?.collectionView.reloadData()
             }
         }
@@ -95,10 +95,10 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(MainCollectionViewCell.self)", for: indexPath)
         if let cell = cell as? MainCollectionViewCell {
             let item = model.items[indexPath.row]
-            cell.title = item.title
+            
             cell.isFavorite = item.isFavorite
             cell.imageUrlInString = item.imageUrlInString
-            
+            cell.title = item.title
             cell.didFavoritesTapped = { [weak self] in
                 self?.model.items[indexPath.row].isFavorite.toggle()
                 
