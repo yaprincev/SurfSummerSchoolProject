@@ -24,7 +24,7 @@ class MainCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Events
     
-    var didFavoritesTapped: (() -> Void)?
+  //  var didFavoritesTapped: (() -> Void)?
     
     // MARK: - Calculated
     
@@ -64,7 +64,7 @@ class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Actions
     
     @IBAction private func favoriteAction(_ sender: Any) {
-        didFavoritesTapped?()
+        //didFavoritesTapped?()
         isFavorite.toggle()
     }
     

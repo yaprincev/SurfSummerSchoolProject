@@ -99,10 +99,10 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
             cell.isFavorite = item.isFavorite
             cell.imageUrlInString = item.imageUrlInString
             cell.title = item.title
-            cell.didFavoritesTapped = { [weak self] in
-                self?.model.items[indexPath.row].isFavorite.toggle()
+        //    cell.didFavoritesTapped = { [weak self] in
+                //self?.model.items[indexPath.row].isFavorite.toggle()
                 
-            }
+           // }
         }
         return cell
     }

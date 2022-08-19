@@ -18,7 +18,7 @@ class FavoriteViewController: UIViewController {
     
     @IBOutlet private weak var favoriteCollection: UICollectionView!
     
-    // MARK: - Private Properties //todel
+    // MARK: - Private Properties
     
     private let model: MainModel = .init()
     
@@ -45,7 +45,7 @@ private extension FavoriteViewController {
         favoriteCollection.register(UINib(nibName: "\(CollectionViewCell.self)", bundle: .main), forCellWithReuseIdentifier: "\(CollectionViewCell.self)")
         favoriteCollection.dataSource = self
         favoriteCollection.delegate = self
-        //favoriteCollection.contentInset = .init(top: 16, left: 16, bottom: 24, right: 16)
+        
     }
     
     func configureModel() { // todel
