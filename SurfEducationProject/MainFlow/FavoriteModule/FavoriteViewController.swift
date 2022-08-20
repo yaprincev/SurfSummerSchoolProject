@@ -10,7 +10,7 @@ import RealmSwift
 
 
 class FavoriteViewController: UIViewController {
-    
+
     
   
     // MARK: - Realm
@@ -30,7 +30,7 @@ class FavoriteViewController: UIViewController {
     @IBOutlet private weak var favoriteCollection: UICollectionView!
     
     // MARK: - Private Properties
-    
+        
     private let model: MainModel = .init()
     
     // MARK: - UIViewController
@@ -87,15 +87,12 @@ private extension FavoriteViewController {
     
     func deleteModelFromFavoriteDataBase(item: FavoriteModel, index: Int) {
         
-        
         let item = realm.objects(FavoriteModel.self)[index]
     
         try! realm.write {
             realm.delete(item)
         }
         favoriteCollection.reloadData()
-        
-        
         
     }
 }

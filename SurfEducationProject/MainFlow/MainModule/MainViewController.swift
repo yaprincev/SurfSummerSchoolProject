@@ -23,7 +23,7 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - Private Properties
-    private var isAddedToFavorite: Bool = false
+    private var countOfFavorite: Int = 0
     private let model: MainModel = .init()
     private var modelItems: [MainModel] = []
     
@@ -97,31 +97,24 @@ private extension MainViewController {
     func checkFavoriteVC() {
         let items = realm.objects(FavoriteModel.self)
         
-        if (!items.isEmpty && isAddedToFavorite) {
-            model.loadPosts()
-            for i in 0...(model.items.count - 1) {
-                for j in 0...(items.count - 1) {
-                    if model.items[i].title == items[j].title {
-                        model.items[i].isFavorite = true
+        if (items.count != countOfFavorite){
+            if (!items.isEmpty) {
+                model.loadPosts()
+                for i in 0...(model.items.count - 1) {
+                    for j in 0...(items.count - 1) {
+                        if model.items[i].title == items[j].title {
+                            model.items[i].isFavorite = true
+                        }
                     }
                 }
-            }
-        } else if isAddedToFavorite {
-            for i in 0...(model.items.count - 1) {
-               
-                model.items[i].isFavorite = false
-                    
+                countOfFavorite = items.count
+            } else {
+                for i in 0...(model.items.count - 1) {
+                    model.items[i].isFavorite = false
+                }   
             }
         }
     }
-    
-        //else {
-//            for i in 0...(model.items.count - 1) {
-//                model.items[i].isFavorite = false
-//
-//            }
-       // }
-        
     
     func loadModelAndAddToArray() {
         model.loadPosts()
@@ -134,7 +127,7 @@ private extension MainViewController {
     
     func addModelToFavoriteDataBase(currentItem: DetailItemModel, currentCell: MainCollectionViewCell) {
         let favoriteModel = FavoriteModel()
-        isAddedToFavorite = true
+        countOfFavorite = countOfFavorite + 1
         favoriteModel.imageUrlInString = currentItem.imageUrlInString
         favoriteModel.dateCreation = currentItem.dateCreation
         favoriteModel.title = currentItem.title

@@ -70,9 +70,11 @@ class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Actions
     
     @IBAction private func favoriteAction(_ sender: Any) {
-        isFavorite.toggle() 
-        if isFavorite {
-            didFavoritesTapped?()
+        if !isFavorite {
+            isFavorite.toggle()
+            if isFavorite {
+                didFavoritesTapped?()
+            }
         }
     }
     
@@ -83,15 +85,6 @@ class MainCollectionViewCell: UICollectionViewCell {
         configureApperance()
         
     }
-    
-    // MARK: - Methods
-    
-    func getBoolFromDataBase() {
-        let item = realm.objects(FavoriteModel.self)
-        
-        
-    }
-    
 }
 
     // MARK: - Private Methods
