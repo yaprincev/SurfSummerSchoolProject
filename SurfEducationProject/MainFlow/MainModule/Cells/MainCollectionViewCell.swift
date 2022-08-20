@@ -94,7 +94,7 @@ private extension MainCollectionViewCell {
 
     func configureApperance() {
         
-        //favoriteButton.setImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
+        
         titleLabel.textColor = .black
         titleLabel.font = .systemFont(ofSize: 12)
             

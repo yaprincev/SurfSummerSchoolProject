@@ -38,9 +38,6 @@ class MainViewController: UIViewController {
         configureApperance()
         configureModel()
         model.loadPosts()
-        try! realm.write {
-            realm.deleteAll()
-        }
         
         let credentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
         AuthService().performLoginRequestAndSaveToken(credentials: credentials) { result in
@@ -64,7 +61,18 @@ class MainViewController: UIViewController {
         checkFavoriteVC()
        
     }
+    
+    // MARK: - Methods
+    
+    func giveCurrentItemID (title: String) -> Int {
+        model.loadPosts()
+        for i in 0...(model.items.count - 1) {
+            if model.items[i].title == title { return i }
+        }
+        return 0
+    }
 }
+
 
 // MARK: - Private Methods
 
@@ -111,18 +119,12 @@ private extension MainViewController {
             } else {
                 for i in 0...(model.items.count - 1) {
                     model.items[i].isFavorite = false
-                }   
+                }
+                countOfFavorite = 0
             }
         }
     }
     
-    func loadModelAndAddToArray() {
-        model.loadPosts()
-        
-            modelItems.append(model)
-        
-        
-    }
     // MARK: - Database methods
     
     func addModelToFavoriteDataBase(currentItem: DetailItemModel, currentCell: MainCollectionViewCell) {

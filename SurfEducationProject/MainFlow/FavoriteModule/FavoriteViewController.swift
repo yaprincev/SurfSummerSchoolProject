@@ -83,10 +83,11 @@ private extension FavoriteViewController {
         navigationController?.pushViewController(SearchViewController(), animated: true)
     }
     
-   
+    
     
     func deleteModelFromFavoriteDataBase(item: FavoriteModel, index: Int) {
         
+    
         let item = realm.objects(FavoriteModel.self)[index]
     
         try! realm.write {
@@ -128,9 +129,13 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
       }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let mainVC = MainViewController()
+        let item = realm.objects(FavoriteModel.self)[indexPath.row]
         let vc = DetailViewController()
+        let index = mainVC.giveCurrentItemID(title: item.title)
+        vc.model = model.items[index]
+    
         
-        vc.model = model.items[indexPath.row]
         navigationController?.pushViewController(vc, animated: true)
     }
 }
