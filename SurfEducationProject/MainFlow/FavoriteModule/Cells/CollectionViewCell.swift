@@ -16,7 +16,9 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var heartButton: UIButton!
     @IBOutlet private weak var favoriteText: UILabel!
     @IBOutlet private weak var favoriteLabel: UILabel!
+    
     // MARK: - Calculated
+    
     override var isHighlighted: Bool {
         didSet {
             UIView.animate(withDuration: 0.2) {
@@ -24,6 +26,12 @@ class CollectionViewCell: UICollectionViewCell {
             }
         }
     }
+    
+    
+    // MARK: - Events
+    
+    var didFavoritesTapped: (() -> Void)?
+    
     
     // MARK: - UICollectionViewCell
     
@@ -63,6 +71,7 @@ class CollectionViewCell: UICollectionViewCell {
     // MARK: - Actions
 
     @IBAction func heartButton(_ sender: Any) {
+        didFavoritesTapped?()
     }
     
     
@@ -85,6 +94,6 @@ private extension CollectionViewCell {
         
         favoriteDate.textColor = UIColor(displayP3Red: 0xB3 / 255, green: 0xB3 / 255, blue: 0xB3 / 255, alpha: 1)
         favoriteDate.font = .systemFont(ofSize: 10)
-            
     }
+    
 }

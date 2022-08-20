@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MainCollectionViewCell: UICollectionViewCell {
-
+    
+    // MARK: - Realm
+    
+    let realm = try! Realm()
+    
     // MARK: - Constants
     
     private enum Constants {
@@ -24,7 +29,7 @@ class MainCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Events
     
-  //  var didFavoritesTapped: (() -> Void)?
+    var didFavoritesTapped: (() -> Void)?
     
     // MARK: - Calculated
     
@@ -55,6 +60,7 @@ class MainCollectionViewCell: UICollectionViewCell {
             imageView.loadImage(from: url)
         }
     }
+    
     var isFavorite: Bool = false {
         didSet {
             favoriteButton.setImage(buttonImage, for: .normal)
@@ -64,8 +70,10 @@ class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Actions
     
     @IBAction private func favoriteAction(_ sender: Any) {
-        //didFavoritesTapped?()
-        isFavorite.toggle()
+        isFavorite.toggle() 
+        if isFavorite {
+            didFavoritesTapped?()
+        }
     }
     
     // MARK: - UICollectionViewCell
@@ -73,6 +81,15 @@ class MainCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configureApperance()
+        
+    }
+    
+    // MARK: - Methods
+    
+    func getBoolFromDataBase() {
+        let item = realm.objects(FavoriteModel.self)
+        
+        
     }
     
 }
@@ -80,7 +97,11 @@ class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Private Methods
     
 private extension MainCollectionViewCell {
+
+
     func configureApperance() {
+        
+        //favoriteButton.setImage(<#T##image: UIImage?##UIImage?#>, for: <#T##UIControl.State#>)
         titleLabel.textColor = .black
         titleLabel.font = .systemFont(ofSize: 12)
             

@@ -50,6 +50,7 @@
 		82B4462E28AAF577000D997F /* DetailTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B4462C28AAF577000D997F /* DetailTextTableViewCell.swift */; };
 		82B4462F28AAF577000D997F /* DetailTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82B4462D28AAF577000D997F /* DetailTextTableViewCell.xib */; };
 		82B4463128AAF975000D997F /* DetailItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B4463028AAF975000D997F /* DetailItemModel.swift */; };
+		82B8349328B02E0300A2D25D /* FavoriteStorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B8349228B02E0300A2D25D /* FavoriteStorageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		82B4462C28AAF577000D997F /* DetailTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTextTableViewCell.swift; sourceTree = "<group>"; };
 		82B4462D28AAF577000D997F /* DetailTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTextTableViewCell.xib; sourceTree = "<group>"; };
 		82B4463028AAF975000D997F /* DetailItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailItemModel.swift; sourceTree = "<group>"; };
+		82B8349228B02E0300A2D25D /* FavoriteStorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStorageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 				829A3F8128ABC31F006147BC /* Cells */,
 				829A3F9528AC3F28006147BC /* FavoriteViewController.swift */,
 				829A3F9628AC3F28006147BC /* FavoriteViewController.xib */,
+				82B8349228B02E0300A2D25D /* FavoriteStorageModel.swift */,
 			);
 			path = FavoriteModule;
 			sourceTree = "<group>";
@@ -444,6 +447,7 @@
 				829A3FBC28AE3C12006147BC /* BaseTokenStorage.swift in Sources */,
 				829A3FC128AE705D006147BC /* UIImageView+ImageLoader.swift in Sources */,
 				82B4461428A7E06B000D997F /* SearchViewController.swift in Sources */,
+				82B8349328B02E0300A2D25D /* FavoriteStorageModel.swift in Sources */,
 				82B445F4289C1469000D997F /* MainViewController.swift in Sources */,
 				829A3F9728AC3F28006147BC /* FavoriteViewController.swift in Sources */,
 				829A3FAC28AE2531006147BC /* AuthRequestModel.swift in Sources */,

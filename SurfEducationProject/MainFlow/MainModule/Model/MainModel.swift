@@ -35,8 +35,7 @@ final class MainModel {
                                  title: pictureModel.title,
                                  isFavorite: false, // TODO: - Need adding `FavoriteService`
                                  content: pictureModel.content,
-                                 dateCreation: pictureModel.date,
-                                 id: pictureModel.id
+                                 dateCreation: pictureModel.date
                              )
                          }
                      case .failure(let error):

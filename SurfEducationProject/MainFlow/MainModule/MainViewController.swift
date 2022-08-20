@@ -6,10 +6,14 @@
 //
 
 import UIKit
-
+import RealmSwift
 
 class MainViewController: UIViewController {
-
+    
+    // MARK: - Realm
+    
+    let realm = try! Realm()
+    
     // MARK: - Constants
     
     private enum Constants {
@@ -19,8 +23,9 @@ class MainViewController: UIViewController {
     }
     
     // MARK: - Private Properties
-    
+    private var isAddedToFavorite: Bool = false
     private let model: MainModel = .init()
+    private var modelItems: [MainModel] = []
     
     // MARK: - Views
     
@@ -33,6 +38,9 @@ class MainViewController: UIViewController {
         configureApperance()
         configureModel()
         model.loadPosts()
+        try! realm.write {
+            realm.deleteAll()
+        }
         
         let credentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
         AuthService().performLoginRequestAndSaveToken(credentials: credentials) { result in
@@ -49,9 +57,12 @@ class MainViewController: UIViewController {
 //        }
     }
     
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureNavigationBar()
+        checkFavoriteVC()
+       
     }
 }
 
@@ -82,6 +93,58 @@ private extension MainViewController {
     @objc func moveToSearch() {
         navigationController?.pushViewController(SearchViewController(), animated: true)
     }
+    
+    func checkFavoriteVC() {
+        let items = realm.objects(FavoriteModel.self)
+        
+        if (!items.isEmpty && isAddedToFavorite) {
+            model.loadPosts()
+            for i in 0...(model.items.count - 1) {
+                for j in 0...(items.count - 1) {
+                    if model.items[i].title == items[j].title {
+                        model.items[i].isFavorite = true
+                    }
+                }
+            }
+        } else if isAddedToFavorite {
+            for i in 0...(model.items.count - 1) {
+               
+                model.items[i].isFavorite = false
+                    
+            }
+        }
+    }
+    
+        //else {
+//            for i in 0...(model.items.count - 1) {
+//                model.items[i].isFavorite = false
+//
+//            }
+       // }
+        
+    
+    func loadModelAndAddToArray() {
+        model.loadPosts()
+        
+            modelItems.append(model)
+        
+        
+    }
+    // MARK: - Database methods
+    
+    func addModelToFavoriteDataBase(currentItem: DetailItemModel, currentCell: MainCollectionViewCell) {
+        let favoriteModel = FavoriteModel()
+        isAddedToFavorite = true
+        favoriteModel.imageUrlInString = currentItem.imageUrlInString
+        favoriteModel.dateCreation = currentItem.dateCreation
+        favoriteModel.title = currentItem.title
+        favoriteModel.content = currentItem.content
+        try! realm.write {
+            realm.add(favoriteModel)
+        }
+        
+    }
+    
 }
 
 // MARK: - UIcollection
@@ -95,15 +158,15 @@ extension MainViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "\(MainCollectionViewCell.self)", for: indexPath)
         if let cell = cell as? MainCollectionViewCell {
+            
             let item = model.items[indexPath.row]
             
             cell.isFavorite = item.isFavorite
             cell.imageUrlInString = item.imageUrlInString
-            cell.title = item.id
-        //    cell.didFavoritesTapped = { [weak self] in
-                //self?.model.items[indexPath.row].isFavorite.toggle()
-                
-           // }
+            cell.title = item.title
+            cell.didFavoritesTapped = { [weak self] in
+                self?.addModelToFavoriteDataBase(currentItem: item, currentCell: cell)
+            }
         }
         return cell
     }
