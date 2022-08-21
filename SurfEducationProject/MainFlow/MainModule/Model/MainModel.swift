@@ -38,8 +38,8 @@ final class MainModel {
                                  dateCreation: pictureModel.date
                              )
                          }
-                     case .failure(let error):
-                         // TODO: - Implement error state there
+                     case .failure(let erorr):
+                         print(erorr.localizedDescription)
                          break
                      }
                  }

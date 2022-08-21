@@ -118,7 +118,14 @@ extension FavoriteViewController: UICollectionViewDataSource, UICollectionViewDe
             cell.date = item.dateCreation
 
             cell.didFavoritesTapped = { [weak self] in
-                self?.deleteModelFromFavoriteDataBase(item: item, index: indexPath.row )
+                let alert = UIAlertController(title: "Внимание", message: "Вы точно хотите удалить из избранного?", preferredStyle: .alert)
+                let cancelAlert = UIAlertAction(title: "Нет", style: .default)
+                let okAlert = UIAlertAction(title: "Да, точно", style: .cancel) { _ in
+                    self?.deleteModelFromFavoriteDataBase(item: item, index: indexPath.row )
+                }
+                alert.addAction(cancelAlert)
+                alert.addAction(okAlert)
+                self?.present(alert, animated: true, completion: nil)
                 
             }
         }
