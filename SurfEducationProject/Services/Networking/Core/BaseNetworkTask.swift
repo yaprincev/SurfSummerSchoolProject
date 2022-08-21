@@ -30,6 +30,10 @@ struct BaseNetworkTask<AbstractInput: Encodable, AbstractOutput: Decodable>: Net
         BaseTokenStorage()
     }
     
+    var profileStorage: ProfileStorage {
+        DefaultProfileStorage()
+    }
+    
     // MARK: - Initialization
     
     init(inNeedInjectToken: Bool, method: NetworkMethod, path: String) {

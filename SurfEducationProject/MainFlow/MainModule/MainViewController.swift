@@ -40,19 +40,27 @@ class MainViewController: UIViewController {
         model.loadPosts()
         
         let credentials = AuthRequestModel(phone: "+79876543219", password: "qwerty")
-        AuthService().performLoginRequestAndSaveToken(credentials: credentials) { result in
-            switch result {
-            case .success(let response):
-
-                print(response)
-            case .failure(let error):
-                print(error)
+        AuthService()
+                .performLoginRequestAndSaveToken(credentials: credentials) { [weak self] result in
+                    switch result {
+                    case .success:
+                        DispatchQueue.main.async {
+                            if let delegate = UIApplication.shared.delegate as? AppDelegate {
+                                let mainViewController = TabBarConfigurator().configure()
+                                delegate.window?.rootViewController = mainViewController
+                            }
+                        }
+                    case .failure (let error):
+                        print(error)
+                    }
+                }
             }
-        }
+
+
 //        PicturesService().loadPictures { result in
 //            print(result)
 //        }
-    }
+    
     
     
     override func viewWillAppear(_ animated: Bool) {
