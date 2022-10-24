@@ -52,5 +52,333 @@
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91729C09-07A4-4ACD-A2C0-9F393F1FCF6E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "52AA2473-A165-4977-957C-C2BD30459758"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "isFavorite"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "52AA2473-A165-4977-957C-C2BD30459758 - 7b647226856e88e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.getter : Swift.Bool"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "52AA2473-A165-4977-957C-C2BD30459758 - 96111da3889d801d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.setter : Swift.Bool"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "52AA2473-A165-4977-957C-C2BD30459758 - c38f45eba556fee2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.modify : Swift.Bool"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "52AA2473-A165-4977-957C-C2BD30459758 - 7c4ff68c7432e260"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "52AA2473-A165-4977-957C-C2BD30459758 - 49f3a386bc3f4e2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.init(frame: __C.CGRect) -&gt; SurfEducationProject.MainCollectionViewCell"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "562">
+               </Location>
+               <Location
+                  uuid = "52AA2473-A165-4977-957C-C2BD30459758 - a5996efc40fc99f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SurfEducationProject.MainCollectionViewCell&gt;"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "413">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "imageUrlInString"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642 - 7b647226856e88e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.getter : Swift.Bool"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "67">
+               </Location>
+               <Location
+                  uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642 - 96111da3889d801d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.setter : Swift.Bool"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642 - c38f45eba556fee2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.modify : Swift.Bool"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642 - 7c4ff68c7432e260"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.isFavorite.modify : Swift.Bool with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642 - 49f3a386bc3f4e2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.init(frame: __C.CGRect) -&gt; SurfEducationProject.MainCollectionViewCell"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "562">
+               </Location>
+               <Location
+                  uuid = "545448F7-F9FD-494D-9D06-D5FD0FFA0642 - a5996efc40fc99f8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SurfEducationProject.MainCollectionViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SurfEducationProject.MainCollectionViewCell&gt;"
+                  moduleName = "SurfEducationProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/maksimaprincev/Documents/GitHub/SurfSummerSchoolProject/SurfEducationProject/MainFlow/MainModule/Cells/MainCollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "413">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A60E5EC2-FE09-4691-803B-ED6E7489D036"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/FavoriteModule/FavoriteViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "deleteModelFromFavoriteDataBase(item:index:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "095F1065-FD47-4234-B52D-35F416470782"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E217301C-6BDE-4CA4-8A44-8FD2A2130963"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
+            landmarkName = "addModelToFavoriteDataBase(currentItem:currentCell:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C25D330-F58E-4D10-B722-E2E7DB35A349"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2EC3AEB9-C684-4329-85B6-20667F42C364"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/MainModule/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFCB3F2C-4CCF-4BD5-BDED-72F09A1F21EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SurfEducationProject/MainFlow/FavoriteModule/FavoriteViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
+            landmarkName = "collectionView(_:didSelectItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

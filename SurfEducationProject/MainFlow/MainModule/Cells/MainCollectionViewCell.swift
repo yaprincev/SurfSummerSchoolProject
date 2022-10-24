@@ -6,9 +6,14 @@
 //
 
 import UIKit
+import RealmSwift
 
 class MainCollectionViewCell: UICollectionViewCell {
-
+    
+    // MARK: - Realm
+    
+    let realm = try! Realm()
+    
     // MARK: - Constants
     
     private enum Constants {
@@ -26,10 +31,18 @@ class MainCollectionViewCell: UICollectionViewCell {
     
     var didFavoritesTapped: (() -> Void)?
     
-    //MARK: - Calculated
+    // MARK: - Calculated
     
     var buttonImage: UIImage? {
         return isFavorite ? Constants.fillHeart : Constants.heartImage
+    }
+
+    override var isHighlighted: Bool {
+        didSet {
+            UIView.animate(withDuration: 0.2) {
+                self.contentView.transform = self.isHighlighted ? CGAffineTransform(scaleX: 0.98, y: 0.98) : .identity
+            }
+        }
     }
     
     // MARK: - Properties
@@ -39,11 +52,15 @@ class MainCollectionViewCell: UICollectionViewCell {
             titleLabel.text = title
         }
     }
-    var image: UIImage? {
+    var imageUrlInString: String = "" {
         didSet {
-            imageView.image = image
+            guard let url = URL(string: imageUrlInString) else {
+                return
+            }
+            imageView.loadImage(from: url)
         }
     }
+    
     var isFavorite: Bool = false {
         didSet {
             favoriteButton.setImage(buttonImage, for: .normal)
@@ -53,8 +70,12 @@ class MainCollectionViewCell: UICollectionViewCell {
     // MARK: - Actions
     
     @IBAction private func favoriteAction(_ sender: Any) {
-        didFavoritesTapped?()
-        isFavorite.toggle()
+        if !isFavorite {
+            isFavorite.toggle()
+            if isFavorite {
+                didFavoritesTapped?()
+            }
+        }
     }
     
     // MARK: - UICollectionViewCell
@@ -62,14 +83,18 @@ class MainCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         configureApperance()
+        
     }
-    
 }
 
     // MARK: - Private Methods
     
 private extension MainCollectionViewCell {
+
+
     func configureApperance() {
+        
+        
         titleLabel.textColor = .black
         titleLabel.font = .systemFont(ofSize: 12)
             
